@@ -23,6 +23,14 @@ struct ContentView: View {
 				.ignoresSafeArea()
 			
 			VStack {
+				Text("Time: \(timeRemaining)")
+					.font(.largeTitle)
+					.foregroundColor(.white)
+					.padding(.horizontal, 20)
+					.padding(.vertical, 5)
+					.background(.black.opacity(0.75))
+					.clipShape(Capsule())
+				
 				ZStack {
 					ForEach(0..<cards.count, id: \.self) { index in
 						CardView(card: cards[index]) {
