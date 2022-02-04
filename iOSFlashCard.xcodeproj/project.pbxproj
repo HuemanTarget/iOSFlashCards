@@ -12,6 +12,7 @@
 		1F99662627ADA27300E73598 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F99662527ADA27300E73598 /* Assets.xcassets */; };
 		1F99662927ADA27300E73598 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F99662827ADA27300E73598 /* Preview Assets.xcassets */; };
 		1F99663227ADCBD500E73598 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F99663127ADCBD500E73598 /* Card.swift */; };
+		1F99663427ADCC6000E73598 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F99663327ADCC6000E73598 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		1F99662527ADA27300E73598 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F99662827ADA27300E73598 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		1F99663127ADCBD500E73598 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		1F99663327ADCC6000E73598 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 			isa = PBXGroup;
 			children = (
 				1F99662327ADA27200E73598 /* ContentView.swift */,
+				1F99663327ADCC6000E73598 /* CardView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,6 +161,7 @@
 			files = (
 				1F99662427ADA27200E73598 /* ContentView.swift in Sources */,
 				1F99663227ADCBD500E73598 /* Card.swift in Sources */,
+				1F99663427ADCC6000E73598 /* CardView.swift in Sources */,
 				1F99662227ADA27200E73598 /* iOSFlashCardApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
