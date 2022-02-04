@@ -10,6 +10,8 @@ import SwiftUI
 struct CardView: View {
 	let card: Card
 	
+	@State private var offset = CGSize.zero
+	
 	@State var isShowingAnswer: Bool = false
 	
 	var body: some View {
@@ -33,6 +35,7 @@ struct CardView: View {
 			.multilineTextAlignment(.center)
 		}
 		.frame(width: 350, height: 250)
+		.rotationEffect(.degrees(Double(offset.width / 5)))
 		.onTapGesture {
 			isShowingAnswer.toggle()
 		}
