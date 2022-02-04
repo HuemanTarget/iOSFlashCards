@@ -11,6 +11,9 @@ struct ContentView: View {
 	@Environment(\.accessibilityDifferentiateWithoutColor) var differentiateWithoutColor
 	
 	@State private var cards = [Card](repeating: Card.example, count: 10)
+	@State private var timeRemaining: Int = 100
+	
+	let timer = Timer.publish(every: 1, on: .main, in: .common).autoconnect()
 	
 	var body: some View {
 		ZStack {
@@ -53,6 +56,11 @@ struct ContentView: View {
 					.font(.largeTitle)
 					.padding()
 				}
+			}
+		}
+		.onReceive(timer) { time in
+			if timeRemaining > 0 {
+				timeRemaining -= 1
 			}
 		}
 	}
