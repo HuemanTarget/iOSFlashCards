@@ -8,11 +8,9 @@
 import SwiftUI
 
 struct ContentView: View {
+	
 	var body: some View {
-		Text("Hello, world!")
-			.onTapGesture {
-				print("Single tapped!")
-			}
+		CardView(card: Card.example)
 	}
 }
 

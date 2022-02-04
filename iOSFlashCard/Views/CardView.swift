@@ -33,6 +33,9 @@ struct CardView: View {
 			.multilineTextAlignment(.center)
 		}
 		.frame(width: 350, height: 250)
+		.onTapGesture {
+			isShowingAnswer.toggle()
+		}
 	}
 }
 
